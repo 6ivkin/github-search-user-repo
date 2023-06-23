@@ -6,5 +6,5 @@ import {Log} from "./modules/log.js";
 const api = new Api();
 const log = new Log();
 
-const view = new View();
+const view = new View(api);
 const search = new Search(view, api, log);
